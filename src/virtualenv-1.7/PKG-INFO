@@ -487,7 +487,7 @@ Description:
         1.7 (2011-11-30)
         ~~~~~~~~~~~~~~~~
         
-        * Updated embedded Distribute release to 0.6.24. Thanks Alex Grönholm.
+        * Updated embedded Distribute release to 0.6.49. Thanks Alex Grönholm.
         
         * Made ``--no-site-packages`` behavior the default behavior.  The
           ``--no-site-packages`` flag is still permitted, but displays a warning when
