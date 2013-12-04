@@ -89,8 +89,8 @@ fi
 
 # Install dependencies.
 echo "-----> Installing dependencies using pip version $(pip --version | awk '{print $2}')"
-pip install --use-mirrors -r requirements.txt --src ./.heroku/src | indent
-pip install gunicorn
+pip install --upgrade --use-mirrors -r requirements.txt --src ./.heroku/src | indent
+pip install --upgrade gunicorn
 
 # Django support.
 if [ "$NAME" = "Python/Django" ] && ! [ "$DISABLE_INJECTION" ]; then
