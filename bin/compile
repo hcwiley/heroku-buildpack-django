@@ -89,7 +89,7 @@ fi
 
 # Install dependencies.
 echo "-----> Installing dependencies using pip version $(pip --version | awk '{print $2}')"
-pip install --upgrade --use-mirrors -r requirements.txt --src ./.heroku/src | indent
+pip install --use-mirrors -r requirements.txt --src ./.heroku/src | indent
 pip install --upgrade gunicorn
 
 # Django support.
