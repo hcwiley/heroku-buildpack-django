@@ -480,16 +480,16 @@ def _install_req(py_executable, unzip=False, distribute=False,
     if search_dirs is None:
         search_dirs = file_search_dirs()
 
-    if not distribute:
-        setup_fn = 'setuptools-0.6c11-py%s.egg' % sys.version[:3]
-        project_name = 'setuptools'
-        bootstrap_script = EZ_SETUP_PY
-        source = None
-    else:
-        setup_fn = None
-        source = 'distribute-0.6.49.tar.gz'
-        project_name = 'distribute'
-        bootstrap_script = DISTRIBUTE_SETUP_PY
+    #if not distribute:
+        #setup_fn = 'setuptools-0.6c11-py%s.egg' % sys.version[:3]
+        #project_name = 'setuptools'
+        #bootstrap_script = EZ_SETUP_PY
+        #source = None
+    #else:
+    setup_fn = None
+    source = 'distribute-0.6.49.tar.gz'
+    project_name = 'distribute'
+    bootstrap_script = DISTRIBUTE_SETUP_PY
 
     if setup_fn is not None:
         setup_fn = _find_file(setup_fn, search_dirs)
